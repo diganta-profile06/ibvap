@@ -196,14 +196,14 @@ The History Log UI and Dashboard UI query this database to display past events a
 
 ## 👥 Team — Coding Leyaks
 
-| Name            | Role                 |
-| --------------- | -------------------- |
-| _Team Member 1_ | _Team Lead / Backend_|
-| _Team Member 2_ | _Computer Vision_    |
-| _Team Member 3_ | _UI / Frontend_      |
-| _Team Member 4_ | _Database / Testing_ |
-
-> Replace the placeholders above with your actual team details.
+| Name | Role | Focus Area |
+| ---- | ---- | ---------- |
+| **Diganta Pal** | Team Lead | Project coordination, architecture, system integration |
+| **Abhranil Mallick** | Computer Vision & AI | OpenCV + ncnn detection pipeline, model optimisation |
+| **Biprajit Biswas** | Backend | C++ core, Video Source Manager (mobile, laptop, video file, RTSP) |
+| **Sagnik Das** | Database | SQLite schema, event logging, History Log data layer |
+| **Utsav Das** | QA, Documentation & Presentation | Testing, README, demo video, SIH presentation |
+| **Saptaparna Das** | UI / Frontend | Dear ImGui + OpenGL 3 + SDL 3 interface, React JS Dashboard & History Log |
 
 ---
 
