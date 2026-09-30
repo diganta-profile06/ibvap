@@ -12,7 +12,7 @@ Smart India Hackathon 2026 · Problem Statement **26187** · Team **Coding Leyak
 [![SQLite](https://img.shields.io/badge/Database-SQLite-003B57?logo=sqlite)](#)
 [![React](https://img.shields.io/badge/Frontend-React%20JS-61DAFB?logo=react)](#)
 
-[🌐 Website](https://diganta-profile06.github.io/ibvap/) · [📦 Repository](https://github.com/diganta-profile06/ibvap) · [⬇️ Download Installer](#-quick-start-windows-installer)
+[⬇️ Download IBVAP_Setup.exe](https://github.com/diganta-profile06/ibvap/releases/latest/download/IBVAP_Setup.exe) · [📦 Repository](https://github.com/diganta-profile06/ibvap)
 
 </div>
 
