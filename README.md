@@ -184,6 +184,17 @@ The History Log UI and Dashboard UI query this database to display past events a
 
 ---
 
+## 🎬 Demo Videos
+
+| | |
+| :---: | :---: |
+| [![Demo 1](https://img.youtube.com/vi/VIDEO_ID_1/hqdefault.jpg)](https://www.youtube.com/watch?v=VIDEO_ID_1)<br>**Project Overview** | [![Demo 2](https://img.youtube.com/vi/VIDEO_ID_2/hqdefault.jpg)](https://www.youtube.com/watch?v=VIDEO_ID_2)<br>**Mobile Camera Demo** |
+| [![Demo 3](https://img.youtube.com/vi/VIDEO_ID_3/hqdefault.jpg)](https://www.youtube.com/watch?v=VIDEO_ID_3)<br>**Laptop Camera / Pre-recorded Video Demo** | [![Demo 4](https://img.youtube.com/vi/VIDEO_ID_4/hqdefault.jpg)](https://www.youtube.com/watch?v=VIDEO_ID_4)<br>**RTSP & Dashboard Demo** |
+
+> Replace `VIDEO_ID_1` ... `VIDEO_ID_4` with your YouTube video IDs (the part after `v=` in the link).
+
+---
+
 ## 🗺️ Roadmap
 
 - [ ] Additional detectors (vehicle detection, face recognition, ANPR)
