@@ -112,7 +112,7 @@ ibvap/
 
 The fastest way to try IBVAP:
 
-1. Download **`IBVAP_Setup.exe`** from the [Releases](https://github.com/diganta-profile06/ibvap/releases) page.
+1. Click the **Download IBVAP_Setup.exe** link at the top of this page (or get it from the [Releases](https://github.com/diganta-profile06/ibvap/releases) page).
 2. Run the installer and follow the on-screen steps.
 3. Launch **IBVAP** from the Start menu.
 4. Choose a video source (mobile camera, laptop camera, video file or RTSP URL) and start analysing.
@@ -186,18 +186,18 @@ The History Log UI and Dashboard UI query this database to display past events a
 
 ## 🎬 Demo Videos
 
-| | |
-| :---: | :---: |
-| [![Demo 1](https://img.youtube.com/vi/VIDEO_ID_1/hqdefault.jpg)](https://www.youtube.com/watch?v=VIDEO_ID_1)<br>**Project Overview** | [![Demo 2](https://img.youtube.com/vi/VIDEO_ID_2/hqdefault.jpg)](https://www.youtube.com/watch?v=VIDEO_ID_2)<br>**Mobile Camera Demo** |
-| [![Demo 3](https://img.youtube.com/vi/VIDEO_ID_3/hqdefault.jpg)](https://www.youtube.com/watch?v=VIDEO_ID_3)<br>**Laptop Camera / Pre-recorded Video Demo** | [![Demo 4](https://img.youtube.com/vi/VIDEO_ID_4/hqdefault.jpg)](https://www.youtube.com/watch?v=VIDEO_ID_4)<br>**RTSP & Dashboard Demo** |
-
-> Replace `VIDEO_ID_1` ... `VIDEO_ID_4` with your YouTube video IDs (the part after `v=` in the link).
+| Demo | Description | Watch |
+| ---- | ----------- | :---: |
+| 🌡️ **Thermal Detection** | Detection on thermal imagery for low-visibility and night conditions | [▶ Watch](https://drive.google.com/file/d/1ZnBVc7YIK7K_A7B3Q3OWrDvuamqsMsZR/view?usp=drivesdk) |
+| 🙂 **Face Recognition** | Identifying faces in live and recorded feeds | [▶ Watch](https://drive.google.com/file/d/1GHHAvQMsN6qovOwz2C2bA_sVjWvBc6cL/view?usp=drivesdk) |
+| 🚧 **Virtual Fence** | Detecting intrusions when a person or object crosses a defined boundary | [▶ Watch](https://drive.google.com/file/d/1aKR4i98EcWHFGDycz9wFBtqOIyVHYy4a/view?usp=drivesdk) |
+| 🚗 **Vehicle Detection** | Detecting and tracking vehicles in the monitored area | [▶ Watch](https://drive.google.com/file/d/1ro6woOqg_Xr2_u6MWc0cgZsf47cshHjm/view?usp=drivesdk) |
 
 ---
 
 ## 🗺️ Roadmap
 
-- [ ] Additional detectors (vehicle detection, face recognition, ANPR)
+- [ ] Additional detectors (e.g. ANPR / number-plate recognition)
 - [ ] Alert rules and notifications for restricted zones
 - [ ] Multi-camera synchronised view
 - [ ] Optional migration to WebRTC transport for mobile streaming
