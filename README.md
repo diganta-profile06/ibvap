@@ -12,7 +12,7 @@ Smart India Hackathon 2026 · Problem Statement **26187** · Team **Coding Leyak
 [![SQLite](https://img.shields.io/badge/Database-SQLite-003B57?logo=sqlite)](#)
 [![React](https://img.shields.io/badge/Frontend-React%20JS-61DAFB?logo=react)](#)
 
-[⬇️ Download IBVAP_Setup.zip](https://github.com/diganta-profile06/ibvap/raw/main/IBVAP_Setup.zip) · [☁️ Google Drive Mirror](https://drive.google.com/file/d/1TDX6YEvjIGLN1q29ceMaKtY9yeWHxFLX/view?usp=drive_link) · [📦 Repository](https://github.com/diganta-profile06/ibvap)
+[⬇️ Download](https://drive.google.com/file/d/1TDX6YEvjIGLN1q29ceMaKtY9yeWHxFLX/view?usp=drive_link) · [📦 Repository](https://github.com/diganta-profile06/ibvap)
 
 </div>
 
@@ -112,7 +112,7 @@ ibvap/
 
 The fastest way to try IBVAP:
 
-1. Click **[Download IBVAP_Setup.zip](https://github.com/diganta-profile06/ibvap/raw/main/IBVAP_Setup.zip)** at the top of this page. If the download doesn't start, use the [Google Drive mirror](https://drive.google.com/file/d/1TDX6YEvjIGLN1q29ceMaKtY9yeWHxFLX/view?usp=drive_link) instead and click **Download anyway** if Google warns it can't scan the file for viruses.
+1. Click **[Download](https://drive.google.com/file/d/1TDX6YEvjIGLN1q29ceMaKtY9yeWHxFLX/view?usp=drive_link)** at the top of this page to open Google Drive, then click the download icon (⬇️). If Google warns it can't scan the file for viruses, click **Download anyway**.
 2. Right-click the downloaded `.zip` file and choose **Extract All…**.
 3. Open the extracted folder, run **`IBVAP_Setup.exe`** and follow the on-screen steps.
 4. Launch **IBVAP** from the Start menu.
