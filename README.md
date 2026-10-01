@@ -12,7 +12,7 @@ Smart India Hackathon 2026 · Problem Statement **26187** · Team **Coding Leyak
 [![SQLite](https://img.shields.io/badge/Database-SQLite-003B57?logo=sqlite)](#)
 [![React](https://img.shields.io/badge/Frontend-React%20JS-61DAFB?logo=react)](#)
 
-[⬇️ Download IBVAP_Setup.exe](https://github.com/diganta-profile06/ibvap/releases/latest/download/IBVAP_Setup.exe) · [📦 Repository](https://github.com/diganta-profile06/ibvap)
+[⬇️ Download IBVAP_Setup.zip](https://github.com/diganta-profile06/ibvap/releases/latest/download/IBVAP_Setup.zip) · [📦 Repository](https://github.com/diganta-profile06/ibvap)
 
 </div>
 
@@ -112,10 +112,11 @@ ibvap/
 
 The fastest way to try IBVAP:
 
-1. Click the **Download IBVAP_Setup.exe** link at the top of this page (or get it from the [Releases](https://github.com/diganta-profile06/ibvap/releases) page).
-2. Run the installer and follow the on-screen steps.
-3. Launch **IBVAP** from the Start menu.
-4. Choose a video source (mobile camera, laptop camera, video file or RTSP URL) and start analysing.
+1. Click the **Download IBVAP_Setup.zip** link at the top of this page (or get it from the [Releases](https://github.com/diganta-profile06/ibvap/releases) page).
+2. Right-click the downloaded `.zip` file and choose **Extract All…** (the zip contains `IBVAP_Setup.exe`).
+3. Open the extracted folder, run **`IBVAP_Setup.exe`** and follow the on-screen steps.
+4. Launch **IBVAP** from the Start menu.
+5. Choose a video source (mobile camera, laptop camera, video file or RTSP URL) and start analysing.
 
 ---
 
