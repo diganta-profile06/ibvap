@@ -1,0 +1,6 @@
+build/
+*.key
+*.crt
+*.db
+imgui.ini
+.vscode/
