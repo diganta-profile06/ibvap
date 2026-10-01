@@ -12,7 +12,7 @@ Smart India Hackathon 2026 · Problem Statement **26187** · Team **Coding Leyak
 [![SQLite](https://img.shields.io/badge/Database-SQLite-003B57?logo=sqlite)](#)
 [![React](https://img.shields.io/badge/Frontend-React%20JS-61DAFB?logo=react)](#)
 
-[⬇️ Download IBVAP Setup](https://drive.google.com/file/d/1TDX6YEvjIGLN1q29ceMaKtY9yeWHxFLX/view?usp=drive_link) · [📦 Repository](https://github.com/diganta-profile06/ibvap)
+[⬇️ Download IBVAP_Setup.zip](https://github.com/diganta-profile06/ibvap/raw/main/IBVAP_Setup.zip) · [☁️ Google Drive Mirror](https://drive.google.com/file/d/1TDX6YEvjIGLN1q29ceMaKtY9yeWHxFLX/view?usp=drive_link) · [📦 Repository](https://github.com/diganta-profile06/ibvap)
 
 </div>
 
@@ -112,12 +112,15 @@ ibvap/
 
 The fastest way to try IBVAP:
 
-1. Click **[Download IBVAP Setup](https://drive.google.com/file/d/1TDX6YEvjIGLN1q29ceMaKtY9yeWHxFLX/view?usp=drive_link)** to open the Google Drive page, then click the download icon (⬇️) at the top right.
-2. If Google shows *"Google Drive can't scan this file for viruses"*, click **Download anyway**.
-3. If the file is a `.zip`, right-click it and choose **Extract All…**.
-4. Run **`IBVAP_Setup.exe`** and follow the on-screen steps.
-5. Launch **IBVAP** from the Start menu.
-6. Choose a video source (mobile camera, laptop camera, video file or RTSP URL) and start analysing.
+1. Click **[Download IBVAP_Setup.zip](https://github.com/diganta-profile06/ibvap/raw/main/IBVAP_Setup.zip)** at the top of this page. If the download doesn't start, use the [Google Drive mirror](https://drive.google.com/file/d/1TDX6YEvjIGLN1q29ceMaKtY9yeWHxFLX/view?usp=drive_link) instead and click **Download anyway** if Google warns it can't scan the file for viruses.
+2. Right-click the downloaded `.zip` file and choose **Extract All…**.
+3. Open the extracted folder, run **`IBVAP_Setup.exe`** and follow the on-screen steps.
+4. Launch **IBVAP** from the Start menu.
+5. Choose a video source (mobile camera, laptop camera, video file or RTSP URL) and start analysing.
+
+> ### ⚠️ Project Installation Note
+> Our application is packaged using an optimized **Inno Setup** compiler. If **Microsoft Defender SmartScreen** displays a warning ("Windows protected your PC") upon launch, please click **"More info"** and then **"Run anyway"**.
+> The warning appears because the installer is not code-signed, which is common for new open-source projects. The application is open-source, and its full source code can be reviewed in this repository.
 
 ---
 
