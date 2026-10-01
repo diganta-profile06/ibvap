@@ -29,7 +29,7 @@ The platform is built for **flexibility in deployment**: it can ingest feeds fro
 ## ✨ Key Features
 
 - **Multiple input sources** through a unified *Video Source Manager*:
-  - 📱 Mobile camera (instant testing, via the `.exe` companion setup)
+  - 📱 Mobile camera (instant testing, connected directly to the laptop over its hotspot)
   - 💻 Laptop camera (fully offline testing)
   - 🎞️ Pre-recorded video files
   - 📡 RTSP streams (IP / CCTV cameras)
@@ -168,10 +168,21 @@ The dashboard is served at `http://localhost:5173/`.
 
 | Source             | Use case                     | How to use                                              |
 | ------------------ | ---------------------------- | ------------------------------------------------------- |
-| Mobile camera      | Instant testing              | Install the `.exe` and connect the phone on the same Wi-Fi |
+| Mobile camera      | Instant testing              | Install the `.exe`, turn on the laptop's Mobile Hotspot and connect the phone to it (direct peer-to-peer link) |
 | Laptop camera      | Offline testing              | Select the built-in webcam in the source list           |
 | Pre-recorded video | Evaluation & demos           | Choose a local video file (`.mp4`, `.avi`, etc.)        |
 | RTSP               | Real CCTV / IP cameras       | Enter a URL such as `rtsp://<user>:<pass>@<ip>:554/stream` |
+
+### 📱 Connecting a Mobile Camera (Peer-to-Peer)
+
+The phone and laptop do **not** need to share an existing Wi-Fi router. IBVAP works over a direct, private peer-to-peer network created by the laptop itself, so it also works in remote areas with no internet.
+
+1. On the laptop, open **Settings → Network & Internet → Mobile hotspot** and turn it **On**. Note the network name and password.
+2. On the phone, open Wi-Fi settings and **connect to the laptop's hotspot**.
+3. Start IBVAP on the laptop and select **Mobile Camera** as the video source.
+4. Open the connection address shown by IBVAP on the phone and allow camera access. The live feed appears in IBVAP.
+
+> The phone will have no internet while connected to the laptop's hotspot. This is expected, because all video stays on this private local network.
 
 ---
 
