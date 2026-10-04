@@ -1,4 +1,4 @@
-<div align="center">
+<div align="center" markdown="1">
 
 # 🛡️ IBVAP — Intelligent Border Video Analytics Platform
 
@@ -240,7 +240,7 @@ This project was developed for **Smart India Hackathon 2026**. Add your preferre
 
 ---
 
-<div align="center">
+<div align="center" markdown="1">
 
 **Built with ❤️ by Team Coding Leyaks for SIH 2026**
 
