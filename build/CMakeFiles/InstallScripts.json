@@ -1,0 +1,10 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/Users/Abhranil/IBVAP/build/cmake_install.cmake",
+		"C:/Users/Abhranil/IBVAP/build/external/SDL3/cmake_install.cmake",
+		"C:/Users/Abhranil/IBVAP/build/src/cmake_install.cmake",
+		"C:/Users/Abhranil/IBVAP/build/crow/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

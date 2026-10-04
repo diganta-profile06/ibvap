@@ -1,0 +1,34 @@
+external/SDL3/CMakeFiles/SDL3-shared.dir/src/gpu/vulkan/SDL_gpu_vulkan.c.obj: \
+ C:\Users\Abhranil\IBVAP\external\SDL3\src\gpu\vulkan\SDL_gpu_vulkan.c \
+ C:/Users/Abhranil/IBVAP/external/SDL3/src/SDL_internal.h \
+ C:/Users/Abhranil/IBVAP/external/SDL3/src/video/khronos/vulkan/vulkan.h \
+ C:/Users/Abhranil/IBVAP/external/SDL3/src/video/khronos/vulkan/vk_platform.h \
+ C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/stddef.h \
+ C:/msys64/ucrt64/include/stddef.h C:/msys64/ucrt64/include/crtdefs.h \
+ C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/stdint.h \
+ C:/Users/Abhranil/IBVAP/external/SDL3/src/video/khronos/vulkan/vulkan_core.h \
+ C:/Users/Abhranil/IBVAP/external/SDL3/src/video/khronos/vk_video/vulkan_video_codec_h264std.h \
+ C:/Users/Abhranil/IBVAP/external/SDL3/src/video/khronos/vk_video/vulkan_video_codecs_common.h \
+ C:/Users/Abhranil/IBVAP/external/SDL3/src/video/khronos/vk_video/vulkan_video_codec_h264std_encode.h \
+ C:/Users/Abhranil/IBVAP/external/SDL3/src/video/khronos/vk_video/vulkan_video_codec_h264std.h \
+ C:/Users/Abhranil/IBVAP/external/SDL3/src/video/khronos/vk_video/vulkan_video_codec_h265std.h \
+ C:/Users/Abhranil/IBVAP/external/SDL3/src/video/khronos/vk_video/vulkan_video_codec_h265std_encode.h \
+ C:/Users/Abhranil/IBVAP/external/SDL3/src/video/khronos/vk_video/vulkan_video_codec_h265std.h \
+ C:/Users/Abhranil/IBVAP/external/SDL3/src/video/khronos/vk_video/vulkan_video_codec_h264std_decode.h \
+ C:/Users/Abhranil/IBVAP/external/SDL3/src/video/khronos/vk_video/vulkan_video_codec_h265std_decode.h \
+ C:/Users/Abhranil/IBVAP/external/SDL3/src/video/khronos/vk_video/vulkan_video_codec_av1std.h \
+ C:/Users/Abhranil/IBVAP/external/SDL3/src/video/khronos/vk_video/vulkan_video_codec_av1std_decode.h \
+ C:/Users/Abhranil/IBVAP/external/SDL3/src/video/khronos/vk_video/vulkan_video_codec_av1std.h \
+ C:/Users/Abhranil/IBVAP/external/SDL3/src/video/khronos/vulkan/vulkan_beta.h \
+ C:/Users/Abhranil/IBVAP/external/SDL3/include/SDL3/SDL_vulkan.h \
+ C:/Users/Abhranil/IBVAP/external/SDL3/include/SDL3/SDL_stdinc.h \
+ C:/Users/Abhranil/IBVAP/external/SDL3/include/SDL3/SDL_error.h \
+ C:/Users/Abhranil/IBVAP/external/SDL3/include/SDL3/SDL_video.h \
+ C:/Users/Abhranil/IBVAP/external/SDL3/include/SDL3/SDL_begin_code.h \
+ C:/Users/Abhranil/IBVAP/external/SDL3/include/SDL3/SDL_close_code.h \
+ C:/Users/Abhranil/IBVAP/external/SDL3/src/gpu/SDL_sysgpu.h \
+ C:/Users/Abhranil/IBVAP/external/SDL3/src/video/SDL_sysvideo.h \
+ C:/Users/Abhranil/IBVAP/external/SDL3/src/video/SDL_surface_c.h \
+ C:/Users/Abhranil/IBVAP/external/SDL3/src/video/SDL_blit.h \
+ C:/Users/Abhranil/IBVAP/external/SDL3/src/events/SDL_windowevents_c.h \
+ C:\Users\Abhranil\IBVAP\external\SDL3\src\gpu\vulkan\SDL_gpu_vulkan_vkfuncs.h
