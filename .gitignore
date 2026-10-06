@@ -1,0 +1,9 @@
+# build output and local files
+build/
+installer_output/
+frontend/node_modules/
+frontend/dist/
+node_modules/
+*.db
+imgui.ini
+.vscode/

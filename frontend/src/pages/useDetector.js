@@ -12,7 +12,7 @@ function getHuman() {
     humanPromise = (async () => {
       const { Human } = await import("@vladmandic/human");
       const human = new Human({
-        modelBasePath: "/models/",
+        modelBasePath: `${import.meta.env.BASE_URL}models/`,
         backend: "webgl",
         debug: false,
         filter: { enabled: false },

@@ -7,6 +7,9 @@ import { useNavigate } from "react-router-dom";
 //    IBVAP.exe directly - no prompt, nothing to register.
 // 2) Fallback: the ibvap:// link (needs installer/register_ibvap_protocol.bat
 //    once; the browser then asks "Open IBVAP?").
+const DOWNLOAD_URL = "https://drive.google.com/file/d/1TDX6YEvjIGLN1q29ceMaKtY9yeWHxFLX/view?usp=drive_link";
+const isLocalHost = ["localhost", "127.0.0.1", "[::1]"].includes(window.location.hostname);
+
 export default function StartButton({ style }) {
   const navigate = useNavigate();
   const [phase, setPhase] = useState("idle"); // idle | opening | started | running | notfound | link | silent
@@ -31,11 +34,13 @@ export default function StartButton({ style }) {
     clearTimeout(timer.current);
     timer.current = setTimeout(() => {
       if (!leftPage.current) setPhase("silent");
-    }, 4000);
+    }, 8000);
   }
 
   async function launch() {
     setPhase("opening");
+    // On the public website there is no local launcher, so go straight to ibvap://
+    if (!isLocalHost) return tryLink();
     try {
       const r = await fetch("/__ibvap/launch", { method: "POST" });
       const body = await r.json().catch(() => ({}));
@@ -68,7 +73,22 @@ export default function StartButton({ style }) {
         </div>
       )}
 
-      {phase === "silent" && (
+      {phase === "silent" && !isLocalHost && (
+        <div style={small}>
+          <b>Didn't open?</b> If your browser asked <b>"Open IBVAP?"</b>, click <b>Open</b> (tick "Always allow").
+          <div style={{ marginTop: 6 }}>
+            No prompt appeared? One-time fix for this PC: {" "}
+            <a style={link} href={`${import.meta.env.BASE_URL}Fix_START_IBVAP.bat`} download>download Fix_START_IBVAP.bat</a>
+            {" "}and double-click it (if Windows warns, click <b>More info</b> then <b>Run anyway</b>). Then click START IBVAP again.
+          </div>
+          <div style={{ marginTop: 6 }}>
+            IBVAP not installed yet? <a style={link} href={DOWNLOAD_URL} target="_blank" rel="noreferrer">Download the installer</a>.
+            Or <span style={link} onClick={() => navigate("/ibvap-dashboard")}>try the web workspace</span> in your browser.
+          </div>
+        </div>
+      )}
+
+      {phase === "silent" && isLocalHost && (
         <div style={small}>
           <b>Didn't open?</b> Start the web page with <span style={code}>Start_IBVAP_Web.bat</span> (it can launch IBVAP
           directly), or run <span style={code}>installer\register_ibvap_protocol.bat</span> once.
