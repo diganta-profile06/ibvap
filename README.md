@@ -11,8 +11,9 @@ Smart India Hackathon 2026 · Problem Statement **26187** · Team **Coding Leyak
 [![OpenCV](https://img.shields.io/badge/Vision-OpenCV%20%2B%20ncnn-5C3EE8?logo=opencv)](#)
 [![SQLite](https://img.shields.io/badge/Database-SQLite-003B57?logo=sqlite)](#)
 [![React](https://img.shields.io/badge/Frontend-React%20JS-61DAFB?logo=react)](#)
+[![Live Web App](https://img.shields.io/badge/Live-Web%20App-brightgreen?logo=githubpages)](https://diganta-profile06.github.io/ibvap/)
 
-[⬇️ Download](https://drive.google.com/file/d/1TDX6YEvjIGLN1q29ceMaKtY9yeWHxFLX/view?usp=drive_link) · [📦 Repository](https://github.com/diganta-profile06/ibvap)
+[🌐 Live Web App](https://diganta-profile06.github.io/ibvap/) · [⬇️ Download](https://drive.google.com/file/d/1TDX6YEvjIGLN1q29ceMaKtY9yeWHxFLX/view?usp=drive_link) · [📦 Repository](https://github.com/diganta-profile06/ibvap)
 
 </div>
 
@@ -23,6 +24,8 @@ Smart India Hackathon 2026 · Problem Statement **26187** · Team **Coding Leyak
 **IBVAP** is an intelligent video analytics platform designed to assist border-security personnel by automatically detecting and logging events from multiple video sources in real time. Instead of operators watching feeds continuously, IBVAP processes each feed with an AI pipeline, highlights detections on screen, and stores every event in a searchable history log.
 
 The platform is built for **flexibility in deployment**: it can ingest feeds from a mobile phone for instant testing, a laptop webcam for offline demos, pre-recorded footage for evaluation, or RTSP cameras for real installations.
+
+🌐 **Try the web app:** <https://diganta-profile06.github.io/ibvap/> (step-by-step usage guide: [Instructions page](https://diganta-profile06.github.io/ibvap/#/instructions))
 
 ---
 
@@ -38,6 +41,7 @@ The platform is built for **flexibility in deployment**: it can ingest feeds fro
 - **Dashboard UI** for at-a-glance status and analytics.
 - **History Log UI** to review and search past detection events.
 - **Local, zero-setup database** using **SQLite** — no cloud account required.
+- **Web app** (React JS) hosted on GitHub Pages for the project landing page, instructions and dashboard.
 - **Works offline**, suitable for remote border locations with limited connectivity.
 
 ---
@@ -85,24 +89,22 @@ Because the detection, database and UI layers only consume *frames* and *events*
 | Backend                  | C++                                 |
 | Computer Vision & AI     | OpenCV + ncnn (C++)                 |
 | Database                 | SQLite                              |
-| Frontend (Web dashboard) | React JS                            |
+| Frontend (Web)           | React JS (hosted on GitHub Pages)   |
 
 ---
 
 ## 📁 Project Structure
 
-> Adjust folder names to match your repository if they differ.
-
 ```
 ibvap/
-├── backend/            # C++ core: Video Source Manager, detection pipeline, DB layer
-│   ├── src/
-│   ├── models/         # ncnn model files (.param / .bin)
-│   └── CMakeLists.txt
-├── ui/                 # Dear ImGui + OpenGL 3 + SDL 3 desktop interface
-├── frontend/           # React JS dashboard & history log
-├── database/           # SQLite schema and migrations
-├── docs/               # Diagrams, screenshots, presentation
+├── src/                # C++ core: Video Source Manager, detection pipeline, DB layer, UI
+├── models/             # ncnn model files (.param / .bin)
+├── assets/
+│   └── mobile/         # Mobile camera assets
+├── web/                # React JS web app (landing page, instructions, dashboard, history log)
+├── CMakeLists.txt      # C++ build configuration
+├── ibvap.db            # SQLite database
+├── imgui.ini           # Dear ImGui window layout settings
 └── README.md
 ```
 
@@ -117,6 +119,8 @@ The fastest way to try IBVAP:
 3. Open the extracted folder, run **`IBVAP_Setup.exe`** and follow the on-screen steps.
 4. Launch **IBVAP** from the Start menu.
 5. Choose a video source (mobile camera, laptop camera, video file or RTSP URL) and start analysing.
+
+> 💡 Need a walkthrough? Open the [Instructions page](https://diganta-profile06.github.io/ibvap/#/instructions) of the live web app.
 
 > ### ⚠️ Project Installation Note
 > Our application is packaged using an optimized **Inno Setup** compiler. If **Microsoft Defender SmartScreen** displays a warning ("Windows protected your PC") upon launch, please click **"More info"** and then **"Run anyway"**.
@@ -135,7 +139,7 @@ The fastest way to try IBVAP:
 - [SDL 3](https://github.com/libsdl-org/SDL) and OpenGL 3.x capable GPU/driver
 - [Dear ImGui](https://github.com/ocornut/imgui)
 - [SQLite3](https://www.sqlite.org/)
-- [Node.js](https://nodejs.org/) 18+ (for the React frontend)
+- [Node.js](https://nodejs.org/) 18+ (for the React web app)
 
 ### 1. Clone the repository
 
@@ -152,15 +156,15 @@ cmake .. -DCMAKE_BUILD_TYPE=Release
 cmake --build . --config Release
 ```
 
-### 3. Run the React frontend
+### 3. Run the React web app locally
 
 ```bash
-cd frontend
+cd web
 npm install
 npm run dev
 ```
 
-The dashboard is served at `http://localhost:5173/`.
+The web app is served at `http://localhost:5173/`. The hosted version is always available at <https://diganta-profile06.github.io/ibvap/>.
 
 ---
 
@@ -188,7 +192,7 @@ The phone and laptop do **not** need to share an existing Wi-Fi router. IBVAP wo
 
 ## 🗄️ Database
 
-IBVAP stores detection events locally in **SQLite**, so no external service or account is needed. A typical event record contains:
+IBVAP stores detection events locally in **SQLite** (`ibvap.db`), so no external service or account is needed. A typical event record contains:
 
 - Event ID and timestamp
 - Source / camera identifier
@@ -236,7 +240,7 @@ The History Log UI and Dashboard UI query this database to display past events a
 
 ## 📄 License
 
-This project was developed for **Smart India Hackathon 2026**. Add your preferred license here (e.g. MIT) by including a `LICENSE` file in the repository.
+This project was developed for **Smart India Hackathon 2026** by Team Coding Leyaks. All rights reserved unless a `LICENSE` file states otherwise.
 
 ---
 
