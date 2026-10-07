@@ -13,7 +13,7 @@ $ErrorActionPreference = 'Stop'
 try {
   # Where is the installed IBVAP.exe? (registered by Fix_START_IBVAP.bat / the installer)
   $cmd = (Get-ItemProperty -Path 'HKCU:\Software\Classes\ibvap\shell\open\command').'(default)'
-  $exe = $cmd.Trim().Trim('"')
+  if ($cmd -match '([A-Za-z]:\\[^"]*IBVAP\.exe)') { $exe = $Matches[1] } else { throw "Cannot read the registered IBVAP path: $cmd" }
   if (-not (Test-Path -LiteralPath $exe)) { throw "IBVAP.exe not found at: $exe" }
   $appDir = Split-Path -Parent $exe
   $target = Join-Path $appDir 'models\detection'
