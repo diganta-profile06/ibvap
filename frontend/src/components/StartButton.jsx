@@ -1,5 +1,4 @@
 import { useEffect, useRef, useState } from "react";
-import { useNavigate } from "react-router-dom";
 
 // START IBVAP opens the installed IBVAP desktop app.
 //
@@ -11,7 +10,6 @@ const DOWNLOAD_URL = "https://drive.google.com/file/d/1TDX6YEvjIGLN1q29ceMaKtY9y
 const isLocalHost = ["localhost", "127.0.0.1", "[::1]"].includes(window.location.hostname);
 
 export default function StartButton({ style }) {
-  const navigate = useNavigate();
   const [phase, setPhase] = useState("idle"); // idle | opening | started | running | notfound | link | silent
   const leftPage = useRef(false);
   const timer = useRef(null);
@@ -55,26 +53,6 @@ export default function StartButton({ style }) {
   const link = { color: "var(--accent)", cursor: "pointer", textDecoration: "underline" };
   const code = { fontFamily: "monospace" };
 
-  // Public website: don't try to launch anything - just offer the installer.
-  if (!isLocalHost) {
-    return (
-      <div style={style}>
-        <a
-          className="btn"
-          href={DOWNLOAD_URL}
-          target="_blank"
-          rel="noreferrer"
-          style={{ display: "block", width: "100%", boxSizing: "border-box", textAlign: "center", textDecoration: "none" }}
-        >
-          DOWNLOAD IBVAP
-        </a>
-        <div style={small}>
-          Install it, then open <b>IBVAP</b> from your Desktop or Start menu.
-        </div>
-      </div>
-    );
-  }
-
   return (
     <div style={style}>
       <button className="btn" style={{ width: "100%" }} onClick={launch}>START IBVAP</button>
@@ -103,7 +81,6 @@ export default function StartButton({ style }) {
           </div>
           <div style={{ marginTop: 6 }}>
             IBVAP not installed yet? <a style={link} href={DOWNLOAD_URL} target="_blank" rel="noreferrer">Download the installer</a>.
-            Or <span style={link} onClick={() => navigate("/ibvap-dashboard")}>try the web workspace</span> in your browser.
           </div>
         </div>
       )}
@@ -112,9 +89,6 @@ export default function StartButton({ style }) {
         <div style={small}>
           <b>Didn't open?</b> Start the web page with <span style={code}>Start_IBVAP_Web.bat</span> (it can launch IBVAP
           directly), or run <span style={code}>installer\register_ibvap_protocol.bat</span> once.
-          <div style={{ marginTop: 6 }}>
-            Or <span style={link} onClick={() => navigate("/ibvap-dashboard")}>use the web workspace</span> instead.
-          </div>
         </div>
       )}
     </div>
