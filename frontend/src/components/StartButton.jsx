@@ -55,6 +55,26 @@ export default function StartButton({ style }) {
   const link = { color: "var(--accent)", cursor: "pointer", textDecoration: "underline" };
   const code = { fontFamily: "monospace" };
 
+  // Public website: don't try to launch anything - just offer the installer.
+  if (!isLocalHost) {
+    return (
+      <div style={style}>
+        <a
+          className="btn"
+          href={DOWNLOAD_URL}
+          target="_blank"
+          rel="noreferrer"
+          style={{ display: "block", width: "100%", boxSizing: "border-box", textAlign: "center", textDecoration: "none" }}
+        >
+          DOWNLOAD IBVAP
+        </a>
+        <div style={small}>
+          Install it, then open <b>IBVAP</b> from your Desktop or Start menu.
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div style={style}>
       <button className="btn" style={{ width: "100%" }} onClick={launch}>START IBVAP</button>
