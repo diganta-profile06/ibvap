@@ -2,14 +2,16 @@ import StartButton from "../components/StartButton.jsx";
 import { useNavigate } from "react-router-dom";
 
 const STEPS = [
-  "Start the IBVAP monitoring system.",
-  "Connect the available surveillance cameras.",
+  "Download IBVAP and extract the .zip file.",
+  "Run IBVAP_Setup.exe. If Windows SmartScreen warns, click More info → Run anyway.",
+  "Launch IBVAP from the Start menu.",
+  "Choose a video source: Mobile Camera, Laptop Camera, Video File, or RTSP Stream.",
+  "For Mobile Camera: turn on the laptop's Mobile Hotspot, connect the phone to it, open the address shown by IBVAP, and allow camera access.",
   "Camera feeds are displayed in the Video Streaming Slots.",
-  "OpenCV processes the incoming video.",
-  "AI analyzes the video for detected objects/events.",
-  "Detection information is stored in the database.",
+  "OpenCV + ncnn process the incoming video and the AI detects objects/events.",
+  "Detection information is stored in the SQLite database.",
   "The Dashboard displays current monitoring information.",
-  "History Log stores previous events.",
+  "History Log stores and lets you search previous events.",
 ];
 
 export default function Instructions() {
